@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { SharedRoutingModule } from './shared-routing.module';
 
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    SharedRoutingModule
-  ]
+  declarations: [SideMenuComponent],
+  imports: [CommonModule, SharedRoutingModule, RouterModule],
+  exports: [SideMenuComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
